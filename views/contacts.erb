@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @title %></title>
+  </head>
+  <body>
+    <h1>Contact List</h1>
+
+    <ul>
+      <% @contact_list.each do |a_contact| %>
+      <li>First name: <%= a_contact.first_name %> Last name: <%= a_contact.last_name %> Email: <%= a_contact.email %> Note: <%= a_contact.note %></li>
+      <% end %>
+    </ul>
+
+    <p>
+    <%= @currect_time %>
+    </p>
+    <a href="/home">Home</a>
+  </body>
+</html>
