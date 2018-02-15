@@ -1,0 +1,39 @@
+h1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  background-color: #ff000080;
+}
+
+h6 {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+h2 > a {
+  display: block;
+  text-decoration: none;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: #00f8e1;
+}
+
+li > a {
+  color: blue;
+}
+
+.active {
+  background: yellow;
+}
