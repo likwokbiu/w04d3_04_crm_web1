@@ -1,3 +1,9 @@
+body {
+  margin: 5px;
+  font-family: Arial, Helvetica;
+  line-height: 1.8;
+}
+
 h1 {
   background-color: black;
   color: white;
@@ -6,34 +12,46 @@ h1 {
 
 h3 {
   background-color: #ff000080;
+  width: 90%;
+  margin-left: 40px;
+  text-indent: 10px;
 }
 
 h6 {
   background-color: black;
   color: white;
   text-align: center;
+  line-height: 5;
 }
 
 h2 > a {
   display: block;
   text-decoration: none;
-  background-color: grey;
+  background-color: #80808066;
   color: white;
   text-align: center;
 }
 
-ul {
-  list-style-type: none;
-}
-
-li {
+div {
   background-color: #00f8e1;
+  width: 90%;
+  margin-left: 40px;
+  line-height: 1;
 }
 
-li > a {
+div > p {
+  margin-left: 10px;
+  text-indent: 10px;
+  font-size: 1.5em;
+}
+
+div > p:last-child {
   color: blue;
+  font-size: 0.8em;
 }
 
-.active {
-  background: yellow;
+u {
+    text-decoration: underline;
+    text-decoration-color: #00f8e1;
+    text-decoration-style: solid;
 }

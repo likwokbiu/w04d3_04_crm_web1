@@ -1,10 +1,8 @@
-<h3>There are <%= @contacts_list.length %> contacts</h3>
+<h3>There are <u><%= @contacts_list.length %></u> contacts</h3>
 
-<ul>
-  <% @contacts_list.each do |a_contact| %>
-    <li>
-      <p><%= a_contact.first_name %> <%= a_contact.last_name %> (<%= a_contact.email %>)</p>
-      <a href="/">Edit</a> | <a href="/">Delete</a> | <a href="/contacts/<%= a_contact.id %>">Browse</a>
-    </li>
-  <% end %>
-</ul>
+<% @contacts_list.each do |a_contact| %>
+  <div class="list">
+    <p><%= a_contact.first_name %> <%= a_contact.last_name %> (<%= a_contact.email %>)</p>
+    <p><a href="/">Edit</a> | <a href="/">Delete</a> | <a href="/contacts/<%= a_contact.id %>">Browse</a></p>
+  </div>
+<% end %>
