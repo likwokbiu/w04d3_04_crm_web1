@@ -12,33 +12,25 @@
     <main>
       <nav>
         <h2>
-          <% unless @title == 'Home' %>
           <a href="/home">Home</a>
-          <% end %>
         </h2>
 
         <h2>
-          <% unless @title == 'Add' %>
-          <a href="/add">Add a contact</a>
-          <% end %>
+          <a href="/contacts/new">Add a contact</a>
         </h2>
 
         <h2>
-          <% unless @title == 'Contacts' %>
           <a href="/contacts">Contacts List</a>
-          <% end %>
         </h2>
 
         <h2>
-          <% unless @title == 'About' %>
           <a href="/about">About</a>
-          <% end %>
         </h2>
-
       </nav>
 
       <%= yield %>
     </main>
+
     <footer>
       <h6>© Bitmaker 2016</h6>
     </footer>

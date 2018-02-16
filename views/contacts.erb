@@ -3,6 +3,6 @@
 <% @contacts_list.each do |a_contact| %>
   <div class="list">
     <p><%= a_contact.first_name %> <%= a_contact.last_name %> (<%= a_contact.email %>)</p>
-    <p><a href="/">Edit</a> | <a href="/">Delete</a> | <a href="/contacts/<%= a_contact.id %>">Browse</a></p>
+    <p><a href="/contacts/<%= a_contact.id %>/edit">Edit</a> | <a href="/contacts/<%= a_contact.id %>">Delete</a> | <a href="/contacts/<%= a_contact.id %>">Browse</a></p>
   </div>
 <% end %>

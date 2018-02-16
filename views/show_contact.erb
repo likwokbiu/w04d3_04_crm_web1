@@ -1,7 +1,18 @@
+<h4>Contact Informations</h4>
 <p>Record ID : <%= @contact.id %></p>
 <p>First name : <%= @contact.first_name %></p>
 <p>Last name : <%= @contact.last_name %></p>
 <p>Email : <%= @contact.email %></p>
 <p>Note : <%= @contact.note %></p>
 
-<a href="/contacts">Back</a>
+<!-- DELETE /contacts  -->
+<form class="delete_contact" action="/contacts/<%= @contact.id %>" method="post">
+  <input type='hidden' name='_method' value='delete'>
+
+  <button type="submit">
+    <span>Delete Contact</span>
+  </button>
+
+</form>
+
+<p><a href="/contacts/<%= @contact.id %>/edit">Edit</a> | <a href="/contacts">Back</a></p>

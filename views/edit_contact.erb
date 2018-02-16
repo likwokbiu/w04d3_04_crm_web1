@@ -1,0 +1,35 @@
+<h1>Edit a contact</h1>
+
+<!-- PUT /contacts  -->
+<form class="edit_contact" action="/contacts/<%= @contact.id %>" method="post">
+  <input type='hidden' name='_method' value='put'>
+
+  <div>
+    <label for="contact_first_name">First name: </label>
+    <input id="contact_first_name" type="text" name="first_name" placeholder="First name" value="<%= @contact.first_name %>">
+  </div>
+
+  <div>
+    <label for="contact_last_name">Last name: </label>
+    <input id="contact_last_name" type="text" name="last_name" placeholder="Last name"  value="<%= @contact.last_name %>">
+  </div>
+
+  <div>
+    <label for="contact_email">Email: </label>
+    <input id="contact_email" type="email" name="email" placeholder="Email address" value="<%= @contact.email %>">
+  </div>
+
+  <div>
+    <label for="contact_note">Note: </label>
+    <textarea id="contact_note" name="note" placeholder="Put some notes here" rows="4" value="<%= @contact.note %>"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">
+      <span>Edit Contact</span>
+    </button>
+  </div>
+
+</form>
+
+<a href="/contacts">Back</a>
